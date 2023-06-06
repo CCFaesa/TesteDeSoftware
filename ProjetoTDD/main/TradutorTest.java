@@ -1,5 +1,3 @@
-package sample;
-
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -34,7 +32,7 @@ public class TradutorTest {
     }
     
     @Test
-    public void When_AddTwoWord_And_traduzir_First_Expected_First() {
+    public void When_addTwoWord_And_traduzir_first_Expected_First() {
         Tradutor tradutor = new Tradutor();
         String expected = "good";
         
@@ -46,7 +44,7 @@ public class TradutorTest {
     }
     
     @Test
-    public void When_AddTwoWord_And_traduzir_Second_Expected_Second() {
+    public void When_addTwoWord_And_traduzir_Second_Expected_Second() {
         Tradutor tradutor = new Tradutor();
         String expected = "bad";
         
@@ -55,5 +53,15 @@ public class TradutorTest {
         String actual = tradutor.traduzir("mau");
 
         assertEquals(expected, actual);
+    }
+    
+    @Test
+    public void When_limparDicionario_Expected_estaVazio_True() {
+        Tradutor tradutor = new Tradutor();
+        
+        tradutor.adicionarTraducao("bom", "good");
+        tradutor.adicionarTraducao("mau", "bad");
+
+        assertTrue(tradutor.estaVazio());
     }
 }

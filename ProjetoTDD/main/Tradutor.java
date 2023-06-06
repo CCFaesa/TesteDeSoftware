@@ -1,5 +1,3 @@
-package sample;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,4 +17,7 @@ public class Tradutor {
         return traducoes.isEmpty();
     }
     
+    public void limparDicionario() {
+        
+    }
 }
