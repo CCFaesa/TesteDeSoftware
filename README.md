@@ -2,6 +2,7 @@
 
 ### Exibição
 Usando [Guia de nomeclatura][naming-conventions] escrito por Oleksandr Stefanovskyi permite uma leitura mais legível dos testes, segue imagem:
+<br>
 <img src="ProjetoTDD/doc/Relatorio.png" height="200"/>
 
 
